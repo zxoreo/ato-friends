@@ -1408,3 +1408,60 @@ body:has(main > section:target) main > #home:not(:target) {
     grid-auto-rows: 100px;
     overflow-y: auto;
 }
+
+/* Management chart: preserve the full organization chart and prevent overlap */
+#about .about-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    align-items: start;
+    gap: 18px;
+    min-height: 0;
+}
+#about .management-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+}
+#about .management-image-link {
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: 1.4;
+}
+#about .management-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
+}
+#about .management-image-link span {
+    display: block;
+    margin-top: 10px;
+}
+#about .about-content {
+    min-width: 0;
+    align-self: center;
+}
+#about .about-lower-card {
+    min-height: 0;
+}
+@media (max-width: 850px) {
+    #about .about-layout {
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: auto;
+    }
+    #about .management-image-wrap,
+    #about .management-image-link,
+    #about .management-image {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
+}
