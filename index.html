@@ -339,49 +339,58 @@
                     <div class="order-form-card">
                         <h3>Your Order Details</h3>
 
-                        <form class="order-form"
-                              action="https://formsubmit.co/picardalfretchieclaire@gmail.com"
-                              method="POST">
+                        
+<form class="order-form"
+      action="https://api.web3forms.com/submit"
+      method="POST">
 
-                            <input type="hidden" name="_subject" value="New Corn Delight Maja Order Request">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="https://zxoreo.github.io/ato-friends/">
-                            <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="access_key"
+           value=175d09f1-ebb3-4a72-9883-ccd1cbf2cc8e>
 
-                            <label for="orderName">Your name</label>
-                            <input type="text" id="orderName" name="Customer name"
-                                   placeholder="Enter your name" required>
+    <input type="hidden" name="subject"
+           value="New Corn Delight Maja Order Request">
 
-                            <label for="orderContact">Contact information</label>
-                            <input type="text" id="orderContact" name="Contact information"
-                                   placeholder="Phone number or social media name" required>
+    <input type="hidden" name="from_name"
+           value="Corn Delight Maja Website - Order Form">
 
-                            <label for="orderProduct">Select your product</label>
-                            <select id="orderProduct" name="Product" required>
-                                <option value="">Choose a product</option>
-                                <option value="Original Corn Delight Maja - ₱20">
-                                    Original Corn Delight Maja — ₱20
-                                </option>
-                                <option value="Innovative Ube Corn Delight Maja - ₱30">
-                                    Innovative Ube Corn Delight Maja — ₱30
-                                </option>
-                            </select>
+    <input type="hidden" name="redirect"
+           value="https://zxoreo.github.io/ato-friends/receipt.html">
 
-                            <label for="orderQuantity">Quantity in pieces</label>
-                            <input type="number" id="orderQuantity" name="Quantity"
-                                   min="1" max="500" value="1" required>
+    <label for="orderName">Your name</label>
+    <input type="text" id="orderName" name="Customer name"
+           placeholder="Enter your name" required>
 
-                            <label for="orderNotes">Additional notes</label>
-                            <textarea id="orderNotes" name="Additional notes"
-                                      rows="3"
-                                      placeholder="Add your order details here"></textarea>
+    <label for="orderContact">Contact information</label>
+    <input type="text" id="orderContact" name="Contact information"
+           placeholder="Phone number or social media name" required>
 
-                            <button class="button" type="submit">
-                                SEND ORDER REQUEST →
-                            </button>
+    <label for="orderProduct">Select your product</label>
+    <select id="orderProduct" name="Product" required>
+        <option value="">Choose a product</option>
+        <option value="Original Corn Delight Maja - ₱20">
+            Original Corn Delight Maja — ₱20
+        </option>
+        <option value="Innovative Ube Corn Delight Maja - ₱30">
+            Innovative Ube Corn Delight Maja — ₱30
+        </option>
+    </select>
 
-                            <p class="order-note"></p>
-                        </form>
+    <label for="orderQuantity">Quantity in pieces</label>
+    <input type="number" id="orderQuantity" name="Quantity"
+           min="1" max="500" value="1" required>
+
+    <label for="orderNotes">Additional notes</label>
+    <textarea id="orderNotes" name="Additional notes"
+              rows="3"
+              placeholder="Add your order details here"></textarea>
+
+    <button class="button" type="submit">
+        SEND ORDER REQUEST →
+    </button>
+
+    <p class="order-note"></p>
+</form>
+
                     </div>
                 </div>
             </div>
