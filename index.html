@@ -12,10 +12,29 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-rows: auto auto;
+    grid-auto-flow: row;
     align-items: start;
+    align-content: start;
     gap: 18px;
     width: 100%;
-    min-height: 0;
+    min-height: max-content;
+    height: auto;
+    overflow: visible;
+}
+
+#about .management-image-wrap {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#about .about-content {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#about .about-lower-card {
+    grid-row: 2;
+    align-self: start;
 }
 
 #about .management-image-wrap {
