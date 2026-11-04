@@ -1112,7 +1112,7 @@ body:has(main > section:target) main > #home:not(:target) {
     }
 
     #home h1 {
-        fofont-size: clamp(2rem, 6vw, 3.2rem);
+        font-size: clamp(2rem, 6vw, 3.2rem);
     }
 
     #home .hero-description {
