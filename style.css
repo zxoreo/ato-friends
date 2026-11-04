@@ -804,13 +804,14 @@ body:has(main > section:target) main > #home:not(:target) {
 }
 
 .preparation-grid {
-    display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-rows: unset;
     flex: 1;
-    min-width: 0;
     min-height: 0;
-    gap: 10px;
+    overflow: visible;
+    align-items: stretch;
+    padding: 0;
 }
 
 .preparation-photo {
