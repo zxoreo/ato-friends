@@ -1410,7 +1410,7 @@ body:has(main > section:target) main > #home:not(:target) {
 #about .about-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: minmax(680px, auto) auto;
     align-items: start;
     gap: 18px;
     min-height: 0;
