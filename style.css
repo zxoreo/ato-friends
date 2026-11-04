@@ -1404,10 +1404,16 @@ body:has(main > section:target) main > #home:not(:target) {
     #home .logo-frame {
         width: min(220px, 32vh, 60vw);
     }
-}.preparation-grid {
-    grid-template-rows: none !important;
-    grid-auto-rows: 100px;
-    overflow-y: auto;
+.preparation-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-rows: unset;
+    flex: 1;
+    min-height: 0;
+    overflow: visible;
+    align-items: stretch;
+    padding: 0;
+}
 }
 
 /* Management chart: preserve the full organization chart and prevent overlap */
